@@ -97,6 +97,7 @@ body {
 }
 
 .input-section input::placeholder {
+  font-weight: 300;
   font-size: 15px;
   color: #afafaf;
 }
@@ -114,6 +115,7 @@ body {
   background-position: 95% 50%;
   padding: 0 15px;
   font-size: 15px;
+  font-weight: 300;
   color: #afafaf;
 }
 
@@ -162,6 +164,7 @@ input[type="checkbox"]+label+span {
   color: #afafaf;
   display: inline-block;
   font-size: 18px;
+  font-weight: 300;
   padding-left: 15px;
   margin-top: -2px;
 }
