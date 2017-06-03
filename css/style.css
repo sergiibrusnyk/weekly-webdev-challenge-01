@@ -23,12 +23,16 @@ body {
   justify-content: space-between;
 }
 
-.logo {
-  background-image: url('../img/logo.png');
-  background-repeat: no-repeat;
-  width: 429px;
-  height: 111px;
-  margin: 0 auto;
+.form-left-side {
+  width: 50%;
+}
+
+.form-right-side {
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
 }
 
 .main-container h2 {
@@ -120,7 +124,7 @@ body {
 }
 
 input:focus {
-  outline: 1px solid rgba(255, 255, 255, 0.9);
+  outline: 1px solid #f6f6f6;
 }
 
 
@@ -138,7 +142,8 @@ input:focus {
 }
 
 input[type='checkbox'] {
-  display: none;
+  position: absolute;
+  left: -999em;
 }
 
 input[type='checkbox']+label {
@@ -160,7 +165,7 @@ input[type="checkbox"]:checked+label span {
   background: url('../img/checked.png') no-repeat center;
 }
 
-input[type="checkbox"]+label+span {
+.checkbox-text {
   color: #afafaf;
   display: inline-block;
   font-size: 18px;
@@ -255,7 +260,7 @@ textarea::placeholder {
 }
 
 textarea:focus {
-  outline: 1px solid rgba(255, 255, 255, 0.9);
+  outline: 1px solid #f6f6f6;
 }
 
 
@@ -320,3 +325,21 @@ footer {
 
 
 /*End of Sign In Form style*/
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .form-left-side {
+    width: 100%;
+  }
+  .form-right-side {
+    width: 100%;
+  }
+  .form-background {
+    margin: 0 auto;
+  }
+  .bottom-logo {
+    margin: 20px auto;
+  }
+}
